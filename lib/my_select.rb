@@ -1,13 +1,14 @@
 def my_select(arr) 
- i = 0 
+ i = [] 
  
  arr.each do |x|
-  yield(x)
+  
 
-   if x.true?
+   if yield(x)
     i << x 
      
     end 
-  i  
- end 
+    
+ end
+ i
 end
